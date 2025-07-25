@@ -202,7 +202,7 @@ async def cmd_start(msg: Message):
             return
 
     flow  = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRETS, SCOPES)
-    creds = flow.run_local_server(open_browser=True)
+    creds = flow.run_local_server(open_browser=False)
     with open(CREDENTIALS_FILE, "w", encoding="utf-8") as f:
         f.write(creds.to_json())
 
