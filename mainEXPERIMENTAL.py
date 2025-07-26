@@ -439,6 +439,13 @@ async def reminder_loop(gid: str):
             reply_to_message_id=info["tg_msg_id"]
         )
 
+# ─── COMMAND: /myid ───────────────────────────────────────────────────────────
+@dp.message(F.text == "/myid")
+async def cmd_myid(m: Message):
+    await m.answer(
+        f"Chat ID: <code>{m.chat.id}</code>\nUser ID: <code>{m.from_user.id}</code>",
+        parse_mode="HTML"
+    )
 # ─── RUNNER ───────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     asyncio.run(dp.start_polling(bot))
