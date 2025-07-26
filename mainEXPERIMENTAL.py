@@ -439,7 +439,7 @@ async def reminder_loop(gid: str):
             reply_to_message_id=info["tg_msg_id"]
         )
 
-# ─── COMMAND: /myid ───────────────────────────────────────────────────────────
+# ─── COMMAND: /myid  ───────────────────────────────────────────────────────────
 @dp.message(F.text == "/myid")
 async def cmd_myid(m: Message):
     await m.answer(
