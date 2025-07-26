@@ -24,8 +24,8 @@ A lightweight Telegram bot that polls Gmail for unread messages and delivers the
 ### 1. Clone & Setup Environment
 
 ```bash
-git clone https://github.com/you/telegram-gmail-notifier.git
-cd telegram-gmail-notifier
+git clone https://github.com/vavavoom9/GtelegBot
+cd GtelegBot
 python3 -m venv .venv
 source .venv/bin/activate
 ```
