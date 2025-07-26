@@ -1,7 +1,7 @@
 
 # 🚀 Telegram Gmail Notifier Bot
 
-![License](https://img.shields.io/badge/license-MIT-green)
+![(https://img.shields.io/badge/license-MIT-green)](https://img.shields.io/badge/made%20by-WNNC-white)
 ![Python](https://img.shields.io/badge/python-3.7%2B-blue)
 
 A lightweight Telegram bot that polls Gmail for unread messages and delivers them straight to your chat. Ideal for real-time notifications, customizable filters, and secure admin control.
