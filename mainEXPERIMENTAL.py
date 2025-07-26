@@ -1,3 +1,4 @@
+
 import os
 import sys
 import json
@@ -46,7 +47,7 @@ logger = logging.getLogger(__name__)
 # ensure required files exist
 for fn in (CLIENT_SECRETS, APIKEY_FILE, ADMIN_FILE):
     if not os.path.exists(fn):
-        sys.exit(f"Error: {fn} not found.")
+        sys.exit(f"Error: {fn} not found, follow the readme for instructions.")
 
 # Bot & dispatcher
 from aiogram.client.default import DefaultBotProperties
